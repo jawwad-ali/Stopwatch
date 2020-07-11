@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" ></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="text-center">
+            <h1> StopWatch</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-md-12 col-lg-12 col-xl-12 text-center">
+                <div class="rounded-circle round" id="min">
+                    00
+                </div>
+                <div class="rounded-circle round" id="sec">
+                    00
+                </div>
+                <div class="rounded-circle round" id="milsec">
+                    00
+                </div>
+                <div class="d-block mt-5 text-center">
+                    <button class="btn btn-success" onclick="Start()" id="strt_btn">Start</button>
+                    <button class="btn btn-primary" onclick="Pause()" id="pause_btn" disabled>Pause</button>
+                    <button class="btn btn-danger" onclick="Reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/app.js"></script>
+</html>
